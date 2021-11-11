@@ -2,4 +2,7 @@
     <string name="app_name">MeetingBogota</string>
     <string name="gold_museum">Museo del Oro</string>
     <string name="Description">Ubicado en el centro de Bogotá, es un museo que cuenta con objetos (oro, tumbaga, cerámica, piedra y madera) que fueron de la tecnología más avanzada de las culturas Muisca y Tayrona.</string>
+    <string name="adventure_world">Parque Mundo Aventura</string>
+    <string name="Description_adventure_world">Ubicado en la Cr 71D # 1 14 Sur, Es el parque de atracciones #1 de Colombia por cantidad de visitantes. Reconocido con el premio Rosa de los Vientos, otorgado por la asociación colombiana de periodistas y escritores de turismo ACOPET</string>
+    <string name="text_button_return">Retornar</string>
 </resources>
