@@ -5,4 +5,8 @@
     <string name="adventure_world">Parque Mundo Aventura</string>
     <string name="Description_adventure_world">Ubicado en la Cr 71D # 1 14 Sur, Es el parque de atracciones #1 de Colombia por cantidad de visitantes. Reconocido con el premio Rosa de los Vientos, otorgado por la asociación colombiana de periodistas y escritores de turismo ACOPET</string>
     <string name="text_button_return">Retornar</string>
+    <string name="textViewTitulo">Meeting</string>
+    <string name="textViewTitle1">Bogotá</string>
+    <string name="descriptionBogota">Capital de Colombia</string>
+    <string name="textViewInformacion">Información general</string>
 </resources>
