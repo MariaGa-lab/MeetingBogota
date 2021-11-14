@@ -1,8 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MeetingBogota</string>
-    <string name="gold_museum">Museo del Oro</string>
-    <string name="Description">Ubicado en el centro de Bogotá, es un museo que cuenta con objetos (oro, tumbaga, cerámica, piedra y madera) que fueron de la tecnología más avanzada de las culturas Muisca y Tayrona.</string>
     <string name="maloka_museo_interactivo">Maloka Museo Interactivo</string>
-    <string name="descripcion_de_maloka">Ubicacion:Carrera 68d #24A-51</string>
     <string name="descripcion">"Maloka es un museo interactivo donde todas las personas de diversas edades se ponen en contacto con la inovacion , la ciencia y la technologia, Contiene diferentes espacios de interaccion donde genera relacion  entre la ciencia y la cuidadania con el fin de promover el desarrollo de pensamiento critico, asi mimso se relaizan diversos tallleres y actividades  "</string>
 </resources>
