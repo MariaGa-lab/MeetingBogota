@@ -8,5 +8,11 @@
     <string name="textViewTitulo">Meeting</string>
     <string name="textViewTitle1">Bogotá</string>
     <string name="descriptionBogota">Capital de Colombia</string>
-    <string name="textViewInformacion">Información general</string>
+    <string name="textViewInformacion">Bogotá D.C Capital de Colombia. Población: 8 Millones de habitantes. Temperatura: 12°C</string>
+    <string name="ButtonGoldMuseum">Museo del Oro</string>
+    <string name="ButtonBolivarPark">Parque Simón Bolivar</string>
+    <string name="ButtonWorldAdventure">Parque Mundo Aventura</string>
+    <string name="ButtonGardenBotanic">Jardín Botánico</string>
+    <string name="ButtonChorroQuevedo">Chorro de Quevedo</string>
+    <string name="ButtonPlazaBolivar">Plaza de Bolivar</string>
 </resources>

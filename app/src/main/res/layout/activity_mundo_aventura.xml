@@ -40,20 +40,17 @@
     <TextView
         android:id="@+id/textView"
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="11dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:contentDescription="@string/Description_adventure_world"
+        android:justificationMode="inter_word"
         android:text="@string/Description_adventure_world"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:text="@string/Description" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button"
@@ -61,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="19dp"
         android:layout_marginEnd="8dp"
         android:scrollbarStyle="outsideOverlay"
         android:text="@string/text_button_return"
@@ -71,6 +68,7 @@
         android:visibility="visible"
         app:iconTint="#051A91"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:text="@string/text_button_return"
