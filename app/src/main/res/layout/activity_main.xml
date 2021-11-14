@@ -8,8 +8,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="362dp"
-        android:layout_height="727dp"
+        android:layout_width="374dp"
+        android:layout_height="743dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@color/teal_200"
@@ -22,6 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="SpeakableTextPresentCheck"
         tools:visibility="visible">
 
@@ -98,10 +99,12 @@
         android:layout_marginTop="217dp"
         android:layout_marginEnd="190dp"
         android:text="@string/ButtonGoldMuseum"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/scrollView2"
         app:layout_constraintStart_toEndOf="@+id/scrollView2"
         app:layout_constraintStart_toStartOf="@+id/scrollView2"
-        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        tools:visibility="visible" />
 
     <Button
         android:id="@+id/button3"
@@ -187,6 +190,30 @@
         android:text="@string/ButtonCandelaria"
         app:layout_constraintEnd_toEndOf="@+id/scrollView2"
         app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="190dp"
+        android:text="@string/ButtonMaloka"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="417dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/ButtonMuseoInteractivo"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toTopOf="@+id/scrollView2" />
 
     <ImageView
