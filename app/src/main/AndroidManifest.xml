@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeetingBogota">
         <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".MundoAventuraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".BotanicGardenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +24,9 @@
         <activity
             android:name=".MuseumGoldActivity"
             android:exported="true" />
-
         <activity
-            android:name=".MundoAventuraActivity"
+            android:name=".MainActivity"
             android:exported="true" />
-
     </application>
+
 </manifest>

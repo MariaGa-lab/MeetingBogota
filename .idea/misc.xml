@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_botanic_garden.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_gold_museum.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17395833333333333" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.25" />
