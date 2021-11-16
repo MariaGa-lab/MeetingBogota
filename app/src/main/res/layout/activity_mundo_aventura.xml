@@ -1,77 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MundoAventuraActivity">
+    android:fillViewport="true"
+    >
 
-    <TextView
-        android:id="@+id/adventureWorld"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/adventure_world"
-        android:textSize="30sp"
-        android:textStyle="normal"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/antiquewhite"
+        tools:context=".MundoAventuraActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="377dp"
-        android:layout_height="315dp"
-        android:layout_marginTop="64dp"
-        android:contentDescription="@string/adventure_world"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/adventureWorld"
-        app:srcCompat="@drawable/adventure_world"
-        tools:srcCompat="@drawable/adventure_world" />
+        <TextView
+            android:id="@+id/adventureWorld"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/adventure_world"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/Description_adventure_world"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="377dp"
+            android:layout_height="315dp"
+            android:layout_marginTop="64dp"
+            android:contentDescription="@string/adventure_world"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/adventureWorld"
+            app:srcCompat="@drawable/adventure_world"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/adventure_world" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="8dp"
-        android:scrollbarStyle="outsideOverlay"
-        android:text="@string/text_button_return"
-        android:textColorHighlight="@color/purple_700"
-        android:textColorLink="@color/purple_700"
-        android:textStyle="italic"
-        android:visibility="visible"
-        app:iconTint="#051A91"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:text="@string/text_button_return"
-        tools:visibility="visible" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_width="362dp"
+            android:layout_height="295dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="8dp"
+            android:justificationMode="inter_word"
+            android:text="@string/Description_adventure_world"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

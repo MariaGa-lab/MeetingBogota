@@ -71,12 +71,11 @@
             app:srcCompat="@drawable/bogota_1" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/gold_museum_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="190dp"
             android:text="@string/ButtonGoldMuseum"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,18 +83,18 @@
             tools:visibility="visible" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/bolivar_park_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:text="@string/ButtonBolivarPark"
-            app:layout_constraintStart_toEndOf="@+id/button2"
+            app:layout_constraintStart_toEndOf="@+id/gold_museum_button"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/adventure_world_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -103,21 +102,21 @@
             android:layout_marginEnd="190dp"
             android:text="@string/ButtonWorldAdventure"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintTop_toBottomOf="@+id/gold_museum_button" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/botanic_garden_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:text="@string/ButtonGardenBotanic"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintStart_toEndOf="@+id/adventure_world_button"
+            app:layout_constraintTop_toBottomOf="@+id/bolivar_park_button" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/quevedo_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -126,22 +125,22 @@
             android:text="@string/ButtonChorroQuevedo"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/adventure_world_button"
             tools:visibility="visible" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/bolivar_place_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:text="@string/ButtonPlazaBolivar"
-            app:layout_constraintStart_toEndOf="@+id/button6"
-            app:layout_constraintTop_toBottomOf="@+id/button5" />
+            app:layout_constraintStart_toEndOf="@+id/quevedo_button"
+            app:layout_constraintTop_toBottomOf="@+id/botanic_garden_button" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/monserrate_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -149,22 +148,22 @@
             android:layout_marginEnd="190dp"
             android:text="@string/ButtonMonserrate"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button6" />
+            app:layout_constraintTop_toBottomOf="@+id/quevedo_button" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/candelaria_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:text="@string/ButtonCandelaria"
-            app:layout_constraintStart_toEndOf="@+id/button8"
-            app:layout_constraintTop_toBottomOf="@+id/button7"
+            app:layout_constraintStart_toEndOf="@+id/monserrate_button"
+            app:layout_constraintTop_toBottomOf="@+id/bolivar_place_button"
             tools:ignore="UnknownId" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/maloka_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="8dp"
@@ -172,18 +171,18 @@
             android:layout_marginEnd="190dp"
             android:text="@string/ButtonMaloka"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
+            app:layout_constraintTop_toBottomOf="@+id/monserrate_button" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/botero_museum_button"
             android:layout_width="164dp"
             android:layout_height="54dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:text="@string/ButtonMuseoInteractivo"
-            app:layout_constraintStart_toEndOf="@+id/button10"
-            app:layout_constraintTop_toBottomOf="@+id/button9" />
+            app:layout_constraintStart_toEndOf="@+id/maloka_button"
+            app:layout_constraintTop_toBottomOf="@+id/candelaria_button" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -196,7 +195,7 @@
             android:src="@drawable/mapabogotacolomba"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button10" />
+            app:layout_constraintTop_toBottomOf="@+id/maloka_button" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
