@@ -2,4 +2,7 @@
     <string name="app_name">MeetingBogota</string>
     <string name="gold_museum">Museo del Oro</string>
     <string name="Description">Ubicado en el centro de Bogotá, es un museo que cuenta con objetos (oro, tumbaga, cerámica, piedra y madera) que fueron de la tecnología más avanzada de las culturas Muisca y Tayrona.</string>
+    <string name="temperatura">17°</string>
+    <string name="calificacion">4 estrellas</string>
+    <string name="clima">Temperatura</string>
 </resources>

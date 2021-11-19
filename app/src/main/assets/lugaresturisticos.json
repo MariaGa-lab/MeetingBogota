@@ -1,0 +1,29 @@
+[
+    {
+        "ciudad" : "Bogota",
+        "lugar" : "Parque Simón Bolivar",
+        "temperatura" : 16,
+        "calificacion" : "Cinco estrellas",
+        "urlPicture" : "https://www.idrd.gov.co/sites/default/files/parque_simon_bolivar-2.jpg"
+    },
+    {
+        "ciudad" : "Bogota",
+        "lugar" : "Museo del oro",
+        "temperatura" : 17,
+        "calificacion" : "Cuatro estrellas",
+        "urlPicture" : "https://cdnback.banrepcultural.org/sites/default/files/styles/general_640x400/public/taxonomia/ubicacion/museo-oro-sala-cosmologia-03-595x460.png"
+    },
+    {
+        "ciudad" : "Bogota",
+        "lugar" : "Chorro de Quevedo",
+        "temperatura" : 16,
+        "calificacion" : "Tres estrellas",
+        "urlPicture" : "https://www.elespectador.com/resizer/djDFChmNNbhxcVo0t88ZB7_hdk4=/968x645/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/APDGO576QVBUNHGSSGUA4X5YNM.jpg"
+    },{
+        "ciudad" : "Bogota",
+        "lugar" : "Plaza de Bolivar",
+        "temperatura" : 18,
+        "calificacion" : "Cinco estrellas",
+        "urlPicture" : "https://bogota.gov.co/sites/default/files/styles/despliegue_galeria/public/2_15.jpg"
+    }
+]
