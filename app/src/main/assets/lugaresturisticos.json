@@ -19,11 +19,26 @@
         "temperatura" : 16,
         "calificacion" : "Tres estrellas",
         "urlPicture" : "https://www.elespectador.com/resizer/djDFChmNNbhxcVo0t88ZB7_hdk4=/968x645/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/APDGO576QVBUNHGSSGUA4X5YNM.jpg"
-    },{
+    },
+    {
         "ciudad" : "Bogota",
         "lugar" : "Plaza de Bolivar",
         "temperatura" : 18,
         "calificacion" : "Cinco estrellas",
         "urlPicture" : "https://bogota.gov.co/sites/default/files/styles/despliegue_galeria/public/2_15.jpg"
+    },
+    {
+        "ciudad" : "Bogota",
+        "lugar" : "Mundo Aventura",
+        "temperatura" : 17,
+        "calificacion" : "Cinco estrellas",
+        "urlPicture" : "https://upload.wikimedia.org/wikipedia/commons/c/ce/Parque_de_diversiones_Mundo_Aventura.jpg"
+    },
+    {
+        "ciudad" : "Bogota",
+        "lugar" : "Jardín Botánico",
+        "temperatura" : 17,
+        "calificacion" : "Cinco estrellas",
+        "urlPicture" : "https://www.researchgate.net/profile/Mauricio-Diazgranados/publication/303719521/figure/fig6/AS:368233321385986@1464805073864/Figura-4-El-Jardin-Botanico-de-Bogota-es-uno-de-los-principales-atractivos-turisticos-de.png"
     }
 ]
