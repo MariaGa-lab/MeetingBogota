@@ -1,4 +1,4 @@
-package com.mintic.meetingbogota
+package com.mintic.meetingbogota.model
 
 
 //import com.google.gson.annotations.SerializedName

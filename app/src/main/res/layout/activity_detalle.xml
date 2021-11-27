@@ -4,41 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".detalle.DetalleActivity">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/sitio_text_view"
+        style="@style/Texto_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="650dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/gold_museum"
         android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/picture_image_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="250dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/Description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintTop_toBottomOf="@+id/sitio_text_view"
         app:srcCompat="@drawable/gold_museum_bogota" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/descripcion_text_view"
+        style="@style/Texto_normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
         android:text="@string/Description"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/picture_image_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>

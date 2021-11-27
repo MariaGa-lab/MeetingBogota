@@ -4,6 +4,7 @@
         "lugar" : "Parque Simón Bolivar",
         "temperatura" : 16,
         "calificacion" : "Cinco estrellas",
+        "descripcion" : "Descripción del Parque Simón Bólivar",
         "urlPicture" : "https://www.idrd.gov.co/sites/default/files/parque_simon_bolivar-2.jpg"
     },
     {
@@ -11,6 +12,7 @@
         "lugar" : "Museo del oro",
         "temperatura" : 17,
         "calificacion" : "Cuatro estrellas",
+        "descripcion" : "Descripción del Museo del Oro",
         "urlPicture" : "https://cdnback.banrepcultural.org/sites/default/files/styles/general_640x400/public/taxonomia/ubicacion/museo-oro-sala-cosmologia-03-595x460.png"
     },
     {
@@ -18,6 +20,7 @@
         "lugar" : "Chorro de Quevedo",
         "temperatura" : 16,
         "calificacion" : "Tres estrellas",
+        "descripcion" : "Descripción del Chorro de Quevedo",
         "urlPicture" : "https://www.elespectador.com/resizer/djDFChmNNbhxcVo0t88ZB7_hdk4=/968x645/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/APDGO576QVBUNHGSSGUA4X5YNM.jpg"
     },
     {
@@ -25,6 +28,7 @@
         "lugar" : "Plaza de Bolivar",
         "temperatura" : 18,
         "calificacion" : "Cinco estrellas",
+        "descripcion" : "Descripción de Plaza Bólivar",
         "urlPicture" : "https://bogota.gov.co/sites/default/files/styles/despliegue_galeria/public/2_15.jpg"
     },
     {
@@ -32,6 +36,7 @@
         "lugar" : "Mundo Aventura",
         "temperatura" : 17,
         "calificacion" : "Cinco estrellas",
+        "descripcion" : "Descripción de Mundo Aventura",
         "urlPicture" : "https://upload.wikimedia.org/wikipedia/commons/c/ce/Parque_de_diversiones_Mundo_Aventura.jpg"
     },
     {
@@ -39,6 +44,7 @@
         "lugar" : "Jardín Botánico",
         "temperatura" : 17,
         "calificacion" : "Cinco estrellas",
+        "descripcion" : "Descripción del Jardín Botánico",
         "urlPicture" : "https://www.researchgate.net/profile/Mauricio-Diazgranados/publication/303719521/figure/fig6/AS:368233321385986@1464805073864/Figura-4-El-Jardin-Botanico-de-Bogota-es-uno-de-los-principales-atractivos-turisticos-de.png"
     }
 ]
