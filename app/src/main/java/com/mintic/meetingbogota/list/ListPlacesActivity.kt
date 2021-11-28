@@ -9,7 +9,7 @@ import com.google.gson.Gson
 import com.mintic.meetingbogota.model.Lugar
 import com.mintic.meetingbogota.model.LugarItem
 import com.mintic.meetingbogota.R
-import com.mintic.meetingbogota.detalle.DetalleActivity
+import com.mintic.meetingbogota.detalle.DetailFragment
 
 
 class ListPlacesActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class ListPlacesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list_places)
+        setContentView(R.layout.fragment_list)
 
         placesRecyclerView = findViewById(R.id.places_recycler_view)
 
@@ -36,7 +36,7 @@ class ListPlacesActivity : AppCompatActivity() {
     }
 
     private fun onLugarClicked(sitio: LugarItem) {
-        val intent = Intent(this, DetalleActivity::class.java)
+        val intent = Intent(this, DetailFragment::class.java)
         intent.putExtra("lugar",sitio)
         startActivity(intent)
     }

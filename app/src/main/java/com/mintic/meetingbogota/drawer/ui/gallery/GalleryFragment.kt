@@ -1,4 +1,4 @@
-package com.cubidevs.dccomics.drawer.ui.gallery
+package com.mintic.meetingbogota.drawer.ui.gallery
 
 import android.os.Bundle
 import android.view.LayoutInflater

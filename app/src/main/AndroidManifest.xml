@@ -12,10 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeetingBogota">
         <activity
-            android:name=".main.MainActivity"
+            android:name=".drawer.DrawerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.MeetingBogota.NoActionBar" />
+        <activity
+            android:name=".bottom.BottomActivity"
             android:exported="true" />
         <activity
-            android:name=".list.ListPlacesActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".detalle.DetalleActivity"
-            android:exported="true"></activity>
     </application>
 
 </manifest>

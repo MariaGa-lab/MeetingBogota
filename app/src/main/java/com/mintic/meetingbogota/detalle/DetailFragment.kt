@@ -8,10 +8,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.navArgs
 import com.mintic.meetingbogota.R
-import com.mintic.meetingbogota.databinding.ActivityDetalleBinding
 import com.mintic.meetingbogota.model.LugarItem
 import com.squareup.picasso.Picasso
-//import androidx.navigation.fragment.navArgs
+import androidx.navigation.fragment.navArgs
 import com.mintic.meetingbogota.databinding.FragmentDetailBinding
 import com.mintic.meetingbogota.main.MainActivity
 

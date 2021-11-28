@@ -1,4 +1,4 @@
-package com.cubidevs.dccomics.drawer.ui.home
+package com.mintic.meetingbogota.drawer.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
