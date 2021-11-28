@@ -13,7 +13,7 @@
         <entry key="app/src/main/res/layout/activity_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_gold_museum.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_list_places.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mundo_aventura.xml" value="0.22" />
         <entry key="app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
@@ -25,6 +25,7 @@
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1140625" />
         <entry key="app/src/main/res/layout/fragment_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_list_places.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
         <entry key="app/src/main/res/layout/nav_header_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
