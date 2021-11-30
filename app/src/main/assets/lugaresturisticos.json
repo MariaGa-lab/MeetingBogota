@@ -4,7 +4,7 @@
         "lugar" : "Parque Simón Bolivar",
         "temperatura" : 16,
         "calificacion" : "Cinco estrellas",
-        "descripcion" : "Descripción del Parque Simón Bólivar",
+        "descripcion" : "Ubicado en Barrios Unidos, es un parque en el cual podrás sentirte en paz y respirar aire fresco mientras disfrutas las distintas actividades para hacer. ",
         "urlPicture" : "https://www.idrd.gov.co/sites/default/files/parque_simon_bolivar-2.jpg"
     },
     {
@@ -12,7 +12,7 @@
         "lugar" : "Museo del oro",
         "temperatura" : 17,
         "calificacion" : "Cuatro estrellas",
-        "descripcion" : "Descripción del Museo del Oro",
+        "descripcion" : "Ubicado en el centro de Bogotá, es un museo que cuenta con objetos (oro, tumbaga, cerámica, piedra y madera) que fueron de la tecnología más avanzada de las culturas Muisca y Tayrona.",
         "urlPicture" : "https://cdnback.banrepcultural.org/sites/default/files/styles/general_640x400/public/taxonomia/ubicacion/museo-oro-sala-cosmologia-03-595x460.png"
     },
     {
@@ -20,7 +20,7 @@
         "lugar" : "Chorro de Quevedo",
         "temperatura" : 16,
         "calificacion" : "Tres estrellas",
-        "descripcion" : "Descripción del Chorro de Quevedo",
+        "descripcion" : "El Chorro de Quevedo localizado en el Barrio de la Candelaria de Bogotá. Es el corazón histórico y cultural de la ciudad, donde se cree que se fundó Bogotá el 6 de agosto de 1538.",
         "urlPicture" : "https://www.elespectador.com/resizer/djDFChmNNbhxcVo0t88ZB7_hdk4=/968x645/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/APDGO576QVBUNHGSSGUA4X5YNM.jpg"
     },
     {
@@ -28,7 +28,7 @@
         "lugar" : "Plaza de Bolivar",
         "temperatura" : 18,
         "calificacion" : "Cinco estrellas",
-        "descripcion" : "Descripción de Plaza Bólivar",
+        "descripcion" : "Ubicada en el centro de Bogotá, la Plaza de Bolívar es la principal plaza de la ciudad, siendo declarada como Monumento Nacional Colombiano el 19 de octubre de 1995. Fue construida en el año de 1539 con el nombre de Plaza Mayor y también fue el lugar donde se proclamó el Grito de Independencia el 20 de julio de 1810.",
         "urlPicture" : "https://bogota.gov.co/sites/default/files/styles/despliegue_galeria/public/2_15.jpg"
     },
     {
