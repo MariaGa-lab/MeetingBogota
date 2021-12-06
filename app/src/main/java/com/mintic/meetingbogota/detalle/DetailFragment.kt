@@ -5,17 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.navArgs
-import com.mintic.meetingbogota.R
-import com.mintic.meetingbogota.model.LugarItem
-import com.squareup.picasso.Picasso
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.mintic.meetingbogota.databinding.FragmentDetailBinding
 import com.mintic.meetingbogota.detail.DetailViewModel
 import com.mintic.meetingbogota.main.MainActivity
-
+import com.squareup.picasso.Picasso
 
 class DetailFragment : Fragment() {
 
@@ -45,6 +41,10 @@ class DetailFragment : Fragment() {
             sitioTextView.text = lugar.lugar
             Picasso.get().load(lugar.urlPicture).into(pictureImageView)
             descripcionTextView.text = lugar.descripcion
+
+            mapButton.setOnClickListener {
+                findNavController().navigate(DetailFragmentDirections.actionNavigationDetailToMapsFragment())
+            }
         }
     }
 }

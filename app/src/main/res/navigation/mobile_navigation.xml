@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/mapsFragment">
 
     <fragment
         android:id="@+id/listFragment"
@@ -25,9 +25,17 @@
         <argument
             android:name="lugar"
             app:argType="com.mintic.meetingbogota.model.LugarItem" />
+        <action
+            android:id="@+id/action_navigation_detail_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/navigation_preference"
         android:name="com.mintic.meetingbogota.preference.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.mintic.meetingbogota.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 </navigation>
