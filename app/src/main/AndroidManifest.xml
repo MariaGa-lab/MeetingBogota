@@ -12,13 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MeetingBogota">
         <activity
+            android:name=".tabbed.TabbedActivity"
+            android:exported="true"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/Theme.MeetingBogota.NoActionBar" />
+        <activity
             android:name=".drawer.DrawerActivity"
             android:exported="true"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.MeetingBogota.NoActionBar" />
         <activity
             android:name=".bottom.BottomActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/title_activity_bottom" />
         <activity
             android:name=".main.MainActivity"
             android:exported="true">

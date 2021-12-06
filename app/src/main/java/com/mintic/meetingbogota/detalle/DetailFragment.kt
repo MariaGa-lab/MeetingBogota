@@ -6,18 +6,21 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.mintic.meetingbogota.R
 import com.mintic.meetingbogota.model.LugarItem
 import com.squareup.picasso.Picasso
 import androidx.navigation.fragment.navArgs
 import com.mintic.meetingbogota.databinding.FragmentDetailBinding
+import com.mintic.meetingbogota.detail.DetailViewModel
 import com.mintic.meetingbogota.main.MainActivity
 
 
 class DetailFragment : Fragment() {
 
     private lateinit var detailBinding: FragmentDetailBinding
+    private val detailViewModel: DetailViewModel by viewModels()
     private val args: DetailFragmentArgs by navArgs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +43,7 @@ class DetailFragment : Fragment() {
 
         with(detailBinding){
             sitioTextView.text = lugar.lugar
-            com.squareup.picasso.Picasso.get().load(lugar.urlPicture).into(pictureImageView)
+            Picasso.get().load(lugar.urlPicture).into(pictureImageView)
             descripcionTextView.text = lugar.descripcion
         }
     }

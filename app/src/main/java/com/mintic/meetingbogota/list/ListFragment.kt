@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.cubidevs.dccomics.list.ListViewModel
 import com.google.gson.Gson
 import com.mintic.meetingbogota.R
 import com.mintic.meetingbogota.databinding.FragmentListBinding
@@ -19,6 +20,7 @@ import com.mintic.meetingbogota.model.LugarItem
 class ListFragment : Fragment() {
 
     private lateinit var listBinding: FragmentListBinding
+    private lateinit var listViewModel: ListViewModel
     private lateinit var lugaresAdapter: LugaresAdapter
     private lateinit var listLugar: ArrayList<LugarItem>
 
