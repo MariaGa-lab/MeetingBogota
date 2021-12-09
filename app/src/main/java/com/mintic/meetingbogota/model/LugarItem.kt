@@ -14,7 +14,13 @@ data class LugarItem(
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("temperatura")
-    val temperatura: Int,
+    val temperatura: String,
+    @SerializedName("latitud")
+    val latitud: Double,
+    @SerializedName("longitud")
+    val longitud: Double,
+    @SerializedName("zoom")
+    val zoom: Float,
     @SerializedName("urlPicture")
     val urlPicture: String
 ) : Serializable

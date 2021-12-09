@@ -3,24 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/mapsFragment">
+    app:startDestination="@id/navigation_list">
 
     <fragment
-        android:id="@+id/listFragment"
-        android:name="com.mintic.meetingbogota.list.ListFragment"
-        android:label="fragment_list"
+        android:id="@+id/navigation_list"
+        android:name="com.mintic.meetingbogota.ui.list.ListFragment"
+        android:label="Lista"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_detailFragment"
             app:destination="@id/navigation_detail" />
         <action
-            android:id="@+id/action_listFragment_to_navigation_preference"
+            android:id="@+id/action_listFragment_to_settingsFragment"
             app:destination="@id/navigation_preference" />
     </fragment>
     <fragment
         android:id="@+id/navigation_detail"
-        android:name="com.mintic.meetingbogota.detalle.DetailFragment"
-        android:label="DetailFragment"
+        android:name="com.mintic.meetingbogota.ui.detail.DetailFragment"
+        android:label="Detalle"
         tools:layout="@layout/fragment_detail">
         <argument
             android:name="lugar"
@@ -31,11 +31,15 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_preference"
-        android:name="com.mintic.meetingbogota.preference.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:name="com.mintic.meetingbogota.ui.preference.SettingsFragment"
+        android:label="Preferencias" />
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.mintic.meetingbogota.maps.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="lugar"
+            app:argType="com.mintic.meetingbogota.model.LugarItem" />
+    </fragment>
 </navigation>

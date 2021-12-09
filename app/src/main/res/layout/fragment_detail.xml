@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".detalle.DetailFragment">
+        tools:context=".detalle.DetalleActivity">
 
         <TextView
-            android:id="@+id/sitio_text_view"
+            android:id="@+id/name_text_view"
             style="@style/Texto_titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,7 +31,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sitio_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/name_text_view"
             app:srcCompat="@drawable/gold_museum_bogota"
             tools:ignore="ContentDescription" />
 
@@ -59,7 +58,7 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/sitio_text_view"
+            app:layout_constraintTop_toBottomOf="@id/name_text_view"
             app:srcCompat="@drawable/ic_map"
             tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
@@ -69,15 +68,13 @@
             android:layout_width="0dp"
             android:layout_height="200dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toTopOf="@+id/mapButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sitio_text_view"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout="@layout/fragment_detail" />
+            app:layout_constraintTop_toBottomOf="@+id/descripcion_text_view"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

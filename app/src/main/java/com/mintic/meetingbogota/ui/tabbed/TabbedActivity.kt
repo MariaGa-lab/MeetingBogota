@@ -1,4 +1,4 @@
-package com.mintic.meetingbogota.tabbed
+package com.mintic.meetingbogota.ui.tabbed
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

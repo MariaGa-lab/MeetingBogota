@@ -1,11 +1,11 @@
-package com.mintic.meetingbogota.tabbed
+package com.mintic.meetingbogota.ui.tabbed
 
 import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.mintic.meetingbogota.R
-import com.mintic.meetingbogota.preference.SettingsFragment
+import com.mintic.meetingbogota.ui.preference.SettingsFragment
 
 private val TAB_TITLES = arrayOf(
     R.string.title_list,

@@ -1,4 +1,4 @@
-package com.mintic.meetingbogota.detail
+package com.mintic.meetingbogota.ui.detail
 
 import androidx.lifecycle.ViewModel
 

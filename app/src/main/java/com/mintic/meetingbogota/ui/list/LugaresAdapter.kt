@@ -1,5 +1,6 @@
-package com.mintic.meetingbogota.list
+package com.mintic.meetingbogota.ui.list
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,15 +14,15 @@ import com.squareup.picasso.Picasso
 class LugaresAdapter (
     private val lugaresList : ArrayList<LugarItem>,
     private val onItemClicked: (LugarItem) -> Unit
-    ) : RecyclerView.Adapter<LugaresAdapter.ViewHolder>() {
+    ) : RecyclerView.Adapter<LugaresAdapter.LugarViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LugarViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_view_place_item, parent, false)
-        return ViewHolder(view)
+        return LugarViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: LugarViewHolder, position: Int) {
         val lugar = lugaresList[position]
         holder.itemView.setOnClickListener { onItemClicked(lugaresList[position]) }
         holder.bind(lugar)
@@ -29,7 +30,13 @@ class LugaresAdapter (
 
     override fun getItemCount(): Int = lugaresList.size
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    fun appendItems(newItems: ArrayList<LugarItem>) {
+        lugaresList.clear()
+        lugaresList.addAll(newItems)
+        //notifyDataSetChanged()
+    }
+
+    class LugarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var nameTextView: TextView = itemView.findViewById(R.id.name_text_view)
         private var temperaturaTextView: TextView =
             itemView.findViewById(R.id.temperatura_text_view)
@@ -38,6 +45,7 @@ class LugaresAdapter (
         private var pictureImageView: ImageView = itemView.findViewById(R.id.picture_image_view)
 
         fun bind(lugar: LugarItem) {
+            Log.d("lugar",lugar.lugar)
             nameTextView.text = lugar.lugar
             temperaturaTextView.text = lugar.temperatura.toString()
             calificacionTextView.text = lugar.calificacion

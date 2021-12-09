@@ -1,4 +1,4 @@
-package com.mintic.meetingbogota.bottom
+package com.mintic.meetingbogota.ui.bottom
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

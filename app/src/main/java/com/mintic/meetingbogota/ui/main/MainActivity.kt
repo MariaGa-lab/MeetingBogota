@@ -1,4 +1,4 @@
-package com.mintic.meetingbogota.main
+package com.mintic.meetingbogota.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.mintic.meetingbogota.R
-import com.mintic.meetingbogota.preference.SettingsFragment
+import com.mintic.meetingbogota.ui.preference.SettingsFragment
 
 
 class MainActivity : AppCompatActivity() {
