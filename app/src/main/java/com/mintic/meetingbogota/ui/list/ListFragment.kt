@@ -11,10 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mintic.meetingbogota.databinding.FragmentListBinding
 import com.mintic.meetingbogota.ui.main.MainActivity
 import com.mintic.meetingbogota.model.LugarItem
-import kotlinx.coroutines.DelicateCoroutinesApi
 
-
-@DelicateCoroutinesApi
 class ListFragment : Fragment() {
 
     private lateinit var listBinding: FragmentListBinding

@@ -16,6 +16,7 @@
     <string name="title_list">Lista</string>
     <string name="title_detail">Detalle</string>
     <string name="title_preference">Preferencias</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="title_activity_drawer">DrawerActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
