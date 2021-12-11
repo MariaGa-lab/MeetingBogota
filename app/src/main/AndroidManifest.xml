@@ -42,12 +42,9 @@
             android:name="com.mintic.meetingbogota.ui.bottom.BottomActivity"
             android:exported="true"
             android:label="@string/title_activity_bottom" />
+
         <activity
-            android:name="com.mintic.meetingbogota.ui.main.MainActivity"
-            android:name=".MainActivity2"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

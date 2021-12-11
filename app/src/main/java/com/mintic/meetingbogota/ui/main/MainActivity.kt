@@ -15,7 +15,7 @@ import com.mintic.meetingbogota.ui.preference.SettingsFragment
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_gold_museum)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
