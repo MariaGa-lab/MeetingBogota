@@ -1,0 +1,305 @@
+Index: app/src/main/java/com/mintic/meetingbogota/ui/main/MainActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.mintic.meetingbogota.ui.main\n\nimport androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\nimport android.view.Menu\nimport android.view.MenuInflater\nimport android.view.MenuItem\nimport androidx.appcompat.app.ActionBar\nimport androidx.fragment.app.FragmentManager\nimport androidx.fragment.app.FragmentTransaction\nimport com.mintic.meetingbogota.R\nimport com.mintic.meetingbogota.ui.preference.SettingsFragment\n\n\nclass MainActivity : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_main)\n    }\n\n    override fun onCreateOptionsMenu(menu: Menu?): Boolean {\n        val inflater: MenuInflater = menuInflater\n        inflater.inflate(R.menu.overflow_menu, menu)\n        return true\n    }\n\n    override fun onOptionsItemSelected(item: MenuItem): Boolean {\n        val fm : FragmentManager = supportFragmentManager\n        val ft : FragmentTransaction = fm.beginTransaction()\n\n        return when (item.itemId){\n            R.id.menu_preferences -> {\n                val settingsFragment = SettingsFragment()\n                ft.replace(R.id.fragmentContainerView, settingsFragment).commit()\n                ft.addToBackStack(null)\n                true\n            }\n            android.R.id.home -> {\n                onBackPressed()\n                true\n            }\n            else -> {return true}\n        }\n    }\n\n    fun showIcon(){\n        val actionBar : ActionBar? = supportActionBar\n        actionBar?.setDisplayHomeAsUpEnabled(true)\n    }\n\n    fun hideIcon(){\n        val actionBar : ActionBar? = supportActionBar\n        actionBar?.setDisplayHomeAsUpEnabled(false)\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/mintic/meetingbogota/ui/main/MainActivity.kt b/app/src/main/java/com/mintic/meetingbogota/ui/main/MainActivity.kt
+--- a/app/src/main/java/com/mintic/meetingbogota/ui/main/MainActivity.kt	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ b/app/src/main/java/com/mintic/meetingbogota/ui/main/MainActivity.kt	(date 1639245343246)
+@@ -15,7 +15,7 @@
+ class MainActivity : AppCompatActivity() {
+     override fun onCreate(savedInstanceState: Bundle?) {
+         super.onCreate(savedInstanceState)
+-        setContentView(R.layout.activity_main)
++        setContentView(R.layout.app_bar_drawer)
+     }
+ 
+     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    package=\"com.mintic.meetingbogota\">\n\n    <uses-permission android:name=\"android.permission.INTERNET\" />\n    <uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n    <uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>\n\n    <application\n        android:allowBackup=\"true\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/Theme.MeetingBogota\">\n\n        <!--\n             The API key for Google Maps-based APIs is defined as a string resource.\n             (See the file \"res/values/google_maps_api.xml\").\n             Note that the API key is linked to the encryption key used to sign the APK.\n             You need a different API key for each encryption key, including the release key that is used to\n             sign the APK for publishing.\n             You can define the keys for the debug and release targets in src/debug/ and src/release/.\n        -->\n\n        <meta-data\n            android:name=\"com.google.android.geo.API_KEY\"\n            android:value=\"AIzaSyCtDPcNrcuw6Hf7i-0DXLdE9zbBUSN_Tlw\" />\n\n\n        <activity\n            android:name=\"com.mintic.meetingbogota.ui.tabbed.TabbedActivity\"\n            android:exported=\"true\"\n            android:label=\"@string/title_activity_tabbed\"\n            android:theme=\"@style/Theme.MeetingBogota.NoActionBar\" />\n        <activity\n            android:name=\"com.mintic.meetingbogota.ui.drawer.DrawerActivity\"\n            android:exported=\"true\"\n            android:label=\"@string/title_activity_drawer\"\n            android:theme=\"@style/Theme.MeetingBogota.NoActionBar\" />\n        <activity\n            android:name=\"com.mintic.meetingbogota.ui.bottom.BottomActivity\"\n            android:exported=\"true\"\n            android:label=\"@string/title_activity_bottom\" />\n        <activity\n            android:name=\"com.mintic.meetingbogota.ui.main.MainActivity\"\n            android:name=\".MainActivity2\"\n            android:exported=\"true\" />\n        <activity\n            android:name=\".MainActivity\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n    </application>\n\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ b/app/src/main/AndroidManifest.xml	(date 1639244764525)
+@@ -43,11 +43,7 @@
+             android:exported="true"
+             android:label="@string/title_activity_bottom" />
+         <activity
+-            android:name="com.mintic.meetingbogota.ui.main.MainActivity"
+-            android:name=".MainActivity2"
+-            android:exported="true" />
+-        <activity
+-            android:name=".MainActivity"
++            android:name=".ui.main.MainActivity"
+             android:exported="true">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+Index: app/src/main/res/layout/activity_main2.xml
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main2.xml b/app/src/main/res/layout/activity_main2.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout/activity_main2.xml	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ /dev/null	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
+@@ -1,131 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="wrap_content"
+-    android:layout_height="wrap_content"
+-    tools:context=".MainActivity2">
+-
+-    <ScrollView
+-        android:id="@+id/scrollView2"
+-        android:layout_width="410dp"
+-        android:layout_height="728dp"
+-        android:background="@color/design_default_color_secondary"
+-        android:backgroundTint="@color/design_default_color_secondary_variant"
+-        android:scrollbarStyle="outsideInset"
+-        android:visibility="visible"
+-        app:flow_horizontalAlign="start"
+-        app:flow_verticalAlign="top"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.0"
+-        tools:layout_editor_absoluteX="0dp">
+-
+-    </ScrollView>
+-
+-    <TextView
+-        android:id="@+id/textView2"
+-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:text="@string/textViewTitulo"
+-        android:textSize="24sp"
+-        android:textStyle="bold|italic"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <TextView
+-        android:id="@+id/textView3"
+-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="36dp"
+-        android:layout_marginEnd="8dp"
+-        android:text="@string/textViewTitle1"
+-        android:textSize="24sp"
+-        android:textStyle="bold|italic"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+-
+-    <TextView
+-        android:id="@+id/textView6"
+-        style="@style/Widget.MaterialComponents.Snackbar.TextView"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="250dp"
+-        android:layout_marginTop="96dp"
+-        android:layout_marginEnd="8dp"
+-        android:text="@string/textViewInformacion"
+-        android:textSize="20sp"
+-        android:textStyle="normal"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/scrollView2"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <ImageView
+-        android:id="@+id/imageView8"
+-        android:layout_width="238dp"
+-        android:layout_height="146dp"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="170dp"
+-        android:contentDescription="@string/descriptionBogota"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+-        app:srcCompat="@drawable/bogota_1" />
+-
+-    <Button
+-        android:id="@+id/button2"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginTop="152dp"
+-        android:layout_marginEnd="10dp"
+-        android:text="Button"
+-        app:layout_constraintEnd_toStartOf="@+id/button3"
+-        app:layout_constraintHorizontal_bias="0.0"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+-
+-    <Button
+-        android:id="@+id/button3"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginTop="152dp"
+-        android:layout_marginEnd="16dp"
+-        android:text="Button"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/button2"
+-        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+-
+-    <Button
+-        android:id="@+id/button4"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="16dp"
+-        android:layout_marginTop="15dp"
+-        android:layout_marginEnd="10dp"
+-        android:text="Button"
+-        app:layout_constraintEnd_toStartOf="@+id/button5"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+-
+-    <Button
+-        android:id="@+id/button5"
+-        android:layout_width="0dp"
+-        android:layout_height="wrap_content"
+-        android:layout_marginTop="15dp"
+-        android:layout_marginEnd="16dp"
+-        android:text="Button"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toEndOf="@+id/button4"
+-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+-
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/mintic/meetingbogota/MundoAventuraActivity.kt
+===================================================================
+diff --git a/app/src/main/java/com/mintic/meetingbogota/MundoAventuraActivity.kt b/app/src/main/java/com/mintic/meetingbogota/MundoAventuraActivity.kt
+deleted file mode 100644
+--- a/app/src/main/java/com/mintic/meetingbogota/MundoAventuraActivity.kt	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ /dev/null	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
+@@ -1,11 +0,0 @@
+-package com.mintic.meetingbogota
+-
+-import androidx.appcompat.app.AppCompatActivity
+-import android.os.Bundle
+-
+-class MundoAventuraActivity : AppCompatActivity() {
+-    override fun onCreate(savedInstanceState: Bundle?) {
+-        super.onCreate(savedInstanceState)
+-        setContentView(R.layout.activity_mundo_aventura)
+-    }
+-}
+\ No newline at end of file
+Index: app/src/main/java/com/mintic/meetingbogota/MainActivity2.kt
+===================================================================
+diff --git a/app/src/main/java/com/mintic/meetingbogota/MainActivity2.kt b/app/src/main/java/com/mintic/meetingbogota/MainActivity2.kt
+deleted file mode 100644
+--- a/app/src/main/java/com/mintic/meetingbogota/MainActivity2.kt	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ /dev/null	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
+@@ -1,11 +0,0 @@
+-package com.mintic.meetingbogota
+-
+-import androidx.appcompat.app.AppCompatActivity
+-import android.os.Bundle
+-
+-class MainActivity2 : AppCompatActivity() {
+-    override fun onCreate(savedInstanceState: Bundle?) {
+-        super.onCreate(savedInstanceState)
+-        setContentView(R.layout.activity_main2)
+-    }
+-}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_mundo_aventura.xml
+===================================================================
+diff --git a/app/src/main/res/layout/activity_mundo_aventura.xml b/app/src/main/res/layout/activity_mundo_aventura.xml
+deleted file mode 100644
+--- a/app/src/main/res/layout/activity_mundo_aventura.xml	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
++++ /dev/null	(revision 8fdf593d7ee4e0e14b15012c1a6fd1dcc8295c49)
+@@ -1,78 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".MundoAventuraActivity">
+-
+-    <TextView
+-        android:id="@+id/adventureWorld"
+-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:fontFamily="sans-serif"
+-        android:text="@string/adventure_world"
+-        android:textSize="30sp"
+-        android:textStyle="normal"
+-        android:visibility="visible"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.498"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent" />
+-
+-    <ImageView
+-        android:id="@+id/imageView"
+-        android:layout_width="377dp"
+-        android:layout_height="315dp"
+-        android:layout_marginTop="64dp"
+-        android:contentDescription="@string/adventure_world"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.47"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="@+id/adventureWorld"
+-        app:srcCompat="@drawable/adventure_world"
+-        tools:srcCompat="@drawable/adventure_world" />
+-
+-    <TextView
+-        android:id="@+id/textView"
+-        style="@style/Widget.AppCompat.TextView.SpinnerItem"
+-        android:layout_width="wrap_content"
+-        android:layout_height="wrap_content"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="8dp"
+-        android:layout_marginEnd="8dp"
+-        android:layout_marginBottom="8dp"
+-        android:contentDescription="@string/Description_adventure_world"
+-        android:text="@string/Description_adventure_world"
+-        android:textSize="20sp"
+-        app:layout_constraintBottom_toTopOf="@+id/button"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+-        tools:text="@string/Description" />
+-
+-    <Button
+-        android:id="@+id/button"
+-        style="@style/Widget.AppCompat.Button.Colored"
+-        android:layout_width="wrap_content"
+-        android:layout_height="48dp"
+-        android:layout_marginStart="8dp"
+-        android:layout_marginTop="16dp"
+-        android:layout_marginEnd="8dp"
+-        android:scrollbarStyle="outsideOverlay"
+-        android:text="@string/text_button_return"
+-        android:textColorHighlight="@color/purple_700"
+-        android:textColorLink="@color/purple_700"
+-        android:textStyle="italic"
+-        android:visibility="visible"
+-        app:iconTint="#051A91"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toBottomOf="@+id/textView"
+-        tools:text="@string/text_button_return"
+-        tools:visibility="visible" />
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
