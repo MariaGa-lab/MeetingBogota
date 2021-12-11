@@ -1,0 +1,71 @@
+{
+    "sitiosturisticos" :
+    [
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Parque Simón Bolivar",
+            "temperatura" : "16°C",
+            "calificacion" : "Cinco estrellas",
+            "latitud" : 4.6547573,
+            "longitud" : -74.0834089,
+            "zoom" : 17,
+            "descripcion" : "Ubicado en Barrios Unidos, es un parque en el cual podrás sentirte en paz y respirar aire fresco mientras disfrutas las distintas actividades para hacer. ",
+            "urlPicture" : "https://www.idrd.gov.co/sites/default/files/parque_simon_bolivar-2.jpg"
+        },
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Museo del oro",
+            "temperatura" : "17°C",
+            "latitud" : 4.6016886,
+            "longitud" : -74.1069042,
+            "zoom" : 17,
+            "calificacion" : "Cuatro estrellas",
+            "descripcion" : "Ubicado en el centro de Bogotá, es un museo que cuenta con objetos (oro, tumbaga, cerámica, piedra y madera) que fueron de la tecnología más avanzada de las culturas Muisca y Tayrona.",
+            "urlPicture" : "https://cdnback.banrepcultural.org/sites/default/files/styles/general_640x400/public/taxonomia/ubicacion/museo-oro-sala-cosmologia-03-595x460.png"
+        },
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Chorro de Quevedo",
+            "temperatura" : "16°C",
+            "latitud" : 4.5971128,
+            "longitud" : -74.0721356,
+            "zoom" : 17,
+            "calificacion" : "Tres estrellas",
+            "descripcion" : "El Chorro de Quevedo localizado en el Barrio de la Candelaria de Bogotá. Es el corazón histórico y cultural de la ciudad, donde se cree que se fundó Bogotá el 6 de agosto de 1538.",
+            "urlPicture" : "https://www.elespectador.com/resizer/djDFChmNNbhxcVo0t88ZB7_hdk4=/968x645/filters:format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/APDGO576QVBUNHGSSGUA4X5YNM.jpg"
+        },
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Plaza de Bolivar",
+            "temperatura" : "18°C",
+            "latitud" : 4.5981206,
+            "longitud" : -74.0782322,
+            "zoom" : 17,
+            "calificacion" : "Cinco estrellas",
+            "descripcion" : "Ubicada en el centro de Bogotá, la Plaza de Bolívar es la principal plaza de la ciudad, siendo declarada como Monumento Nacional Colombiano el 19 de octubre de 1995. Fue construida en el año de 1539 con el nombre de Plaza Mayor y también fue el lugar donde se proclamó el Grito de Independencia el 20 de julio de 1810.",
+            "urlPicture" : "https://bogota.gov.co/sites/default/files/styles/despliegue_galeria/public/2_15.jpg"
+        },
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Mundo Aventura",
+            "temperatura" : "17°C",
+            "latitud" : 4.6300803,
+            "longitud" : -74.1363647,
+            "zoom" : 17,
+            "calificacion" : "Cinco estrellas",
+            "descripcion" : "Mundo Aventura es un parque de atracciones que cuenta con atracciones extremas, familiares e infantiles. Se encuentra ubicado en la ciudad de Bogotá, en la localidad de Kennedy, al costado oriental de la avenida Boyacá, entre la avenida Primero de Mayo y la avenida de Las Américas, junto al Centro Comercial Plaza de las Américas y el estadio Metropolitano de Techo, está cerca de la estación de TransMilenio Américas - Avenida Boyacá anteriormente llamada Mundo Aventura.Es el Parque de Diversiones número uno en Colombia por número de visitantes y tiene gran importancia en el contexto nacional.",
+            "urlPicture" : "https://upload.wikimedia.org/wikipedia/commons/c/ce/Parque_de_diversiones_Mundo_Aventura.jpg"
+        },
+        {
+            "ciudad" : "Bogota",
+            "lugar" : "Jardín Botánico",
+            "temperatura" : "17°C",
+            "latitud" : 4.6680808,
+            "longitud" : -74.1022828,
+            "zoom" : 17,
+            "calificacion" : "Cinco estrellas",
+            "descripcion" : "El Jardín Botánico de Bogotá, nombrado oficialmente Jardín Botánico José Celestino Mutis en honor al astrónomo y botánico José Celestino Mutis de origen español, es un parque urbano con entidad jurídica destinado al estudio, conservación y divulgación de la diversidad de las especies vegetales en Bogotá, capital de Colombia. Fundado en 1955 por el sacerdote Enrique Pérez Arbeláez. El Jardín botánico funciona como centro de investigación sobre ecosistemas en las zonas urbanas y rurales, con el fin de conocer las interacciones, el desarrollo y las afectaciones que tienen.",
+            "urlPicture" : "https://www.researchgate.net/profile/Mauricio-Diazgranados/publication/303719521/figure/fig6/AS:368233321385986@1464805073864/Figura-4-El-Jardin-Botanico-de-Bogota-es-uno-de-los-principales-atractivos-turisticos-de.png"
+        }
+    ]
+}
